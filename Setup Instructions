@@ -1,0 +1,42 @@
+Instagram Reels Scraper - Setup Instructions
+--------------------------------------------
+
+Requirements:
+- Python 3.7 or higher
+- Google Chrome browser
+- ChromeDriver (must match your Chrome version)
+
+Install required Python libraries:
+    pip install selenium python-dotenv
+
+Setup:
+
+1. Clone this repository (or download it, your wish)
+
+2. Configure Instagram login credentials:
+
+   Option 1 (Easiest):
+   - Open scraper.py and replace the placeholders:
+       INSTAGRAM_USERNAME = "your_username"
+       INSTAGRAM_PASSWORD = "your_password"
+
+   Option 2 (Secure):
+   - Create a .env file in the project root with:
+       INSTAGRAM_USERNAME=your_username
+       INSTAGRAM_PASSWORD=your_password
+
+3. Download the correct ChromeDriver:
+   - Visit: https://chromedriver.chromium.org/downloads
+   - Download version matching your Chrome browser
+   - Place the `chromedriver` file inside this project folder
+
+Run the scraper:
+    python scraper.py
+
+Output:
+- Scraped data will be saved in a file named `reels_data.csv`
+
+
+
+NOTE: Due to Instagram's dynamic and lazy-loading elements, there is a chance that it does not work after a certain update. You may connect on LinkedIn for that issue
+LinkedIn: https://www.linkedin.com/in/aaryan-kumar-866839266/
